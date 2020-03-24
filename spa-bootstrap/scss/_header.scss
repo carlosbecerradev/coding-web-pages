@@ -1,0 +1,42 @@
+@import 'variables';
+@import 'mixins';
+
+    .sociales {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                position: relative;
+                display: inline-block;
+
+                a::before {
+                    font-family: $fuAwesome;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 0.4rem;
+                    content: '\f08e';
+                    font-size: 2rem;
+                    color: $clrPrincipal;
+                }
+
+                a[href*="facebook.com"]::before{
+                    content: '\f230';
+                }
+                a[href*="twitter.com"]::before{
+                    content: '\f081';
+                }
+                a[href*="instagram.com"]::before{
+                    content: '\f16d';
+                }
+                a[href*="pinterest.com"]::before{
+                    content: '\f0d2';
+                }
+                a[href*="youtube.com"]::before{
+                    content: '\f16a';
+                }
+            }
+            
+        }
+    }

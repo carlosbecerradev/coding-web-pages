@@ -1,0 +1,23 @@
+@mixin smartphone {
+    @media only screen and (min-width: #{$smartphone}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
+// Height
+@mixin smartphoneH {
+    @media only screen and (max-height: 450px){
+        @content;
+    }
+}

@@ -1,0 +1,159 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'nav';
+@import 'slider';
+@import 'footer';
+
+body {
+    background-color: $grisClaro !important;
+}
+.encabezado {
+    font-size: 2.4rem;
+    font-family: $lato;
+    color: $negro;
+    line-height: 2.4rem !important;
+
+    span {
+        font-size: 4rem;
+        font-family: $italianno;
+        color: $clrPrincipal;
+    }
+}
+//Section
+.nuevo-sitio {
+    p {
+        font-family: $lato; 
+        color: $gris;
+        font-size: 1.5rem;
+    }
+}
+
+.servicios {
+    .imagen-servicio img {
+        border: 6px solid $blanco;
+        transition: transform .3s ease;
+    }
+    .imagen-servicio img:hover {
+        transform: scale(1.2) rotate(10deg);
+    }
+    .servicio-info {
+        background-color: $blanco;
+        margin-top: -5rem;
+
+        .btn {
+            border-radius: 0;
+            background-color: $clrPrincipal;
+            border: none;
+        }
+    }
+}
+
+.horario {
+    background-color: $clrSecundario;
+    color: $blanco;
+
+    h2 {
+        font-size: 2.2rem;
+        font-family: $lato;
+    }
+
+    .table {
+        border: 2px solid $clrPrincipal;
+        color: $blanco;
+
+        thead {
+            background-color: $clrPrincipal;      
+            tr {
+                th{
+                    border: none;
+                }
+            }
+    
+        }
+  
+        tbody {
+
+            tr {
+                td {
+                    border: none;
+                    padding: 0.35rem;
+                    font-family: $lato;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .bg-horario {
+        background-image: url(../img/bg_horarios.jpg);
+        background-size: cover;
+        background-position: center center;
+        min-height: 400px;
+    }
+} 
+
+.productos {
+
+    .card {
+        border: none;
+
+        a {
+            color: $negro;
+
+            h3 {
+                color: $clrPrincipal;
+                font-size: 1.2rem;
+                font-family: $lato;
+            }
+
+            p {
+                font-size: .8rem;
+            }
+            .precio {
+                font-size: 1.6rem;
+                color: $gris;
+                font-weight: bold;
+            }
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.citas {
+    background-image: url(../img/bg_citas.jpg);
+    background-color: $negro;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: $blanco;
+    @include tablet() {
+        background-size: cover;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+        font-family: $lato;
+
+    }
+    
+    p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .btn {
+        background-color: $clrSecundario;
+        border: 0;
+        padding: 1rem 5rem;
+        border-radius: 0;
+        font-size: 1.2rem;
+        font-family: $lato;
+    }
+    .btn:hover {
+        background-color: $blanco;
+        color: $negro;
+    }
+}
