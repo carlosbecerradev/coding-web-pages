@@ -1,0 +1,155 @@
+.sociales ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .sociales ul li {
+    position: relative;
+    display: inline-block; }
+    .sociales ul li a::before {
+      font-family: "fontAwesome";
+      display: inline-block;
+      vertical-align: top;
+      padding: 0.4rem;
+      content: '\f08e';
+      font-size: 2rem;
+      color: #e082a8; }
+    .sociales ul li a[href*="facebook.com"]::before {
+      content: '\f230'; }
+    .sociales ul li a[href*="twitter.com"]::before {
+      content: '\f081'; }
+    .sociales ul li a[href*="instagram.com"]::before {
+      content: '\f16d'; }
+    .sociales ul li a[href*="pinterest.com"]::before {
+      content: '\f0d2'; }
+    .sociales ul li a[href*="youtube.com"]::before {
+      content: '\f16a'; }
+
+.navegacion {
+  background-color: #8ed3cc; }
+  .navegacion .nav-principal {
+    background-image: url(../img/border_horizontal.png), url(../img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom; }
+    .navegacion .nav-principal .navbar-toggler {
+      background-color: #ffffff; }
+    .navegacion .nav-principal .navbar-brand, .navegacion .nav-principal .navbar-brand:hover {
+      color: #ffffff; }
+    .navegacion .nav-principal .nav-link {
+      color: #ffffff;
+      font-size: 1.4rem;
+      transition: 1s;
+      font-family: "Raleway", sans-serif; }
+    .navegacion .nav-principal .nav-link:hover {
+      background-color: #e082a8; }
+
+.slider .carousel-inner .carousel-caption h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #ffffff; }
+
+body {
+  background-color: #f8f8f8 !important; }
+
+.encabezado {
+  font-size: 2.4rem;
+  font-family: "Lato", sans-serif;
+  color: #202020;
+  line-height: 2.4rem !important; }
+  .encabezado span {
+    font-size: 4rem;
+    font-family: "Italianno", cursive;
+    color: #e082a8; }
+
+.nuevo-sitio p {
+  font-family: "Lato", sans-serif;
+  color: #979797;
+  font-size: 1.5rem; }
+
+.servicios .imagen-servicio img {
+  border: 6px solid #ffffff;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease; }
+
+.servicios .imagen-servicio img:hover {
+  -webkit-transform: scale(1.2) rotate(10deg);
+  transform: scale(1.2) rotate(10deg); }
+
+.servicios .servicio-info {
+  background-color: #ffffff;
+  margin-top: -5rem; }
+  .servicios .servicio-info .btn {
+    border-radius: 0;
+    background-color: #e082a8;
+    border: none; }
+
+.horario {
+  background-color: #8ed3cc;
+  color: #ffffff; }
+  .horario h2 {
+    font-size: 2.2rem;
+    font-family: "Lato", sans-serif; }
+  .horario .table {
+    border: 2px solid #e082a8;
+    color: #ffffff; }
+    .horario .table thead {
+      background-color: #e082a8; }
+      .horario .table thead tr th {
+        border: none; }
+    .horario .table tbody tr td {
+      border: none;
+      padding: 0.35rem;
+      font-family: "Lato", sans-serif;
+      font-size: 1.2rem; }
+  .horario .bg-horario {
+    background-image: url(../img/bg_horarios.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px; }
+
+.productos .card {
+  border: none; }
+  .productos .card a {
+    color: #202020; }
+    .productos .card a h3 {
+      color: #e082a8;
+      font-size: 1.2rem;
+      font-family: "Lato", sans-serif; }
+    .productos .card a p {
+      font-size: .8rem; }
+    .productos .card a .precio {
+      font-size: 1.6rem;
+      color: #979797;
+      font-weight: bold; }
+  .productos .card a:hover {
+    text-decoration: none; }
+
+.citas {
+  background-image: url(../img/bg_citas.jpg);
+  background-color: #202020;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #ffffff; }
+  @media only screen and (min-width: 768px) {
+    .citas {
+      background-size: cover; } }
+  .citas h3 {
+    font-size: 3.5rem;
+    font-family: "Lato", sans-serif; }
+  .citas p {
+    font-size: 1.2rem;
+    line-height: 2rem; }
+  .citas .btn {
+    background-color: #8ed3cc;
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif; }
+  .citas .btn:hover {
+    background-color: #ffffff;
+    color: #202020; }
