@@ -1,0 +1,35 @@
+/* Background colors */
+.bgc-dark {
+    background-color: $color-dark;
+}
+.bgc-light {
+    background-color: $color-light;
+}
+.bgc-primary {
+    background-color: $color-primary;
+}
+.bgc-secondary {
+    background-color: $color-secondary;
+}
+/* Text colors */
+.textc-dark {
+    color: $color-dark;
+}
+.textc-light {
+    color: $color-light;
+}
+.textc-primary {
+    color: $color-primary;
+}
+.textc-secondary {
+    color: $color-secondary;
+}
+
+/* Fonts */
+.display-font {
+    font-family: $roboto;
+}
+.sans-font {
+    font-family: $lato;
+}
+

@@ -1,0 +1,19 @@
+$lato: 'Lato', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+/* Color */
+$color-primary: #ea1c47;
+$color-secondary: #474a4c;
+$color-dark: #080808;
+$color-light: #ffffff;
+
+/* Font sizes */
+$small-text: .8rem;
+
+/* Breakpoints */
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);

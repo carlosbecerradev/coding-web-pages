@@ -1,0 +1,49 @@
+.footer-block {
+    border-top: 1px solid $color-secondary;
+    padding: 0;
+}
+
+.footer-options {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include from(md) {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    &-item {
+       
+        &-link {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            font-size: $small-text;
+            color: $color-light;
+            
+            &:hover {
+                color: $color-primary;
+            }
+        }
+            
+    }
+}
+
+.social-nav {
+    &-item {
+        color: $color-light;
+        font-size: $small-text;
+        margin-left: .5rem;
+        margin-right: .5rem;
+
+        @include from(md) {
+            
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

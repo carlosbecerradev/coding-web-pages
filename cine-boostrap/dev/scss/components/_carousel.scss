@@ -1,0 +1,56 @@
+
+#carouselExampleCaptions, .carousel-inner, .carousel-item {
+    height: 100%;
+}
+.carousel-item {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient( transparent, $color-dark);
+    }
+}
+.movie {
+    padding: 1rem;
+
+    &-name {        
+        font-family: $roboto;
+        font-weight: 700;
+        &-title {
+            font-size: 2.5rem;
+            text-shadow: 1px 1px $color-dark;
+        }
+        &-subtitle{
+            font-size: 2.5rem;
+            text-shadow: 1px 1px $color-dark;
+        }
+    }
+    &-gender {
+        &-item {
+            &::after {
+                content: ',';
+            }
+            &:last-child::after {
+                content: '';
+            }
+        }
+    }
+    &-schedule {
+        &-item {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 4px 2px;
+            background-color: $color-dark;
+            border-radius: 4px;
+            text-decoration: none;
+            color: $color-light;
+            &:hover {
+                text-decoration: none;
+                color: $color-primary;
+            }
+        }
+    }
+}

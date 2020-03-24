@@ -1,0 +1,19 @@
+.navbar-profile-img {
+    border-radius: 50%;
+    border: 2px solid $color-light;
+}
+.navbar-main {
+    border-bottom: 1px solid #fff;
+}
+.navbar-collapse.collapse.show {
+    position: fixed;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: $color-dark;
+}
+
+.dropleft .dropdown-toggle::before {
+    display: none !important;
+}

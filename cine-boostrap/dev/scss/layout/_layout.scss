@@ -1,0 +1,28 @@
+.header {
+    height: 100vh;
+}
+.subtitle {
+    margin-bottom: 2rem;
+}
+.grid-movies {
+    $img-size: 300px;
+    display: grid;
+    grid-auto-rows: $img-size;
+    grid-gap: 1rem ;
+    grid-auto-flow: row dense;
+    $num-columns: 2;
+    grid-template-columns: repeat($num-columns, 1fr);
+    justify-content: center;
+
+    @include from(md) {
+        $num-columns: 3;
+        grid-template-columns: repeat($num-columns, 1fr);
+    }
+    @include from(lg) {
+        $img-size: 340px;
+        grid-auto-rows: $img-size;
+        $num-columns: 5;
+        grid-template-columns: repeat($num-columns, 1fr);
+    }    
+    
+}

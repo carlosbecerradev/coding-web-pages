@@ -1,0 +1,18 @@
+/* Base */
+@import "base/normalize";
+@import "base/generic";
+/* Utils */
+@import "utils/variables";
+@import "utils/helpers";
+@import "utils/functions";
+@import "utils/mixins";
+/* Layout */
+@import "layout/layout";
+/* components */
+@import "components/navbar";
+@import "components/carousel";
+@import "components/footer";
+/* Pages */
+@import "pages/home";
+/* Theme */
+@import "theme/theme";
