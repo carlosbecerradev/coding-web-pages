@@ -1,0 +1,28 @@
+
+.l-container  {
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+    @include from(l) {
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+        
+}
+
+.glider-discover, .blog-glider, .pre-order-glider {
+    scrollbar-width: none;
+}
+
+@for $i from 1 through 5 {
+    .mt-#{$i} {
+        margin-top: 8px * $i;
+    }
+}
+
+@for $i from 1 through 5 {
+    .pt-#{$i} {
+        padding-top: 8px * $i;
+    }
+}

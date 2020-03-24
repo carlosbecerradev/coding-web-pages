@@ -1,0 +1,13 @@
+.btn {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    &--primary {
+        display: inline-block;
+        color: $white;
+        background: linear-gradient( -90deg, $purple, $pink);
+        padding: .5rem 1rem;
+        border-radius: $border-radius;
+    }
+
+}

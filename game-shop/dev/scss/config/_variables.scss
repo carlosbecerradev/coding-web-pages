@@ -1,0 +1,36 @@
+:root {
+    --purple: #6801fc;
+    --pink: #cf45f7;
+    --yellow: #ffef00;
+    --white: #ffffff;
+    --opacity-white : #ffffff50;
+    --opacity-dark : #0b0e1580;
+    --dark-blue: #03040b;
+    --dark: #0b0e15;
+
+    --raleway: 'Raleway', sans-serif;
+
+    --border-radius: 8px;
+
+    --z-fixed: 1000;
+
+}
+
+$purple: var(--purple);
+$pink: var(--pink);
+$yellow: var(--yellow);
+$white: var(--white);
+$opacity-white: var(--opacity-white);
+$opacity-dark: var(--opacity-dark);
+$dark-blue: var(--dark-blue);
+$dark: var(--dark);
+
+$raleway: var(--raleway);
+
+$border-radius: var(--border-radius);
+
+$z-fixed: var(--z-fixed);
+
+$breakpoints : (
+        l: 768px
+);

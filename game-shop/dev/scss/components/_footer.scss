@@ -1,0 +1,97 @@
+.footer {
+    background-color: $dark-blue;
+    color: $white;
+    padding: 5rem 0;
+    text-align: center;
+
+    li {
+        margin-top: .5rem;
+    }
+
+    &-block {
+        display: f;
+    }
+
+    &-item {
+
+        &.first {
+            @include from(l) {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+
+        &.second {
+            
+            @include from(l) {                
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }        
+
+        &-block {
+
+            &:first-child {
+                @include from(l) {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            &:last-child {
+                @include from(l) {
+                    margin-left: auto;
+                }
+            }
+
+        }    
+
+    }
+
+    &-one {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-nav {
+        margin-top: 2rem;
+
+        @include from(l) {
+            margin-top: 0;
+            padding-right: 3rem;
+            padding-left: 3rem;     
+            text-align: left;            
+            
+        }        
+
+        &-title {
+            font-weight: bolder;
+        }
+    }
+
+    .logo i {
+        font-size: 4rem;
+        color: $dark-blue;
+        background-color: $white;
+        padding: .2rem .5rem;
+    }
+}
+
+.nav-company {
+
+    @include from(l) {
+        display: flex;
+    
+        li {
+            margin-top: 0;
+            margin-right: .8rem;   
+        }
+    }
+
+}
+.created {
+    margin-top: 2rem;
+}

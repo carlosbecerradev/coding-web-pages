@@ -1,0 +1,275 @@
+@import "config/variables.scss";
+@import "config/mixin";
+@import "layout.scss";
+@import "base";
+@import "components/buttons";
+@import "utils";
+@import "components/navigation";
+@import "components/footer";
+
+
+.carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    &-item {
+        position: relative;
+        height: 100%;
+
+        &--img {
+            min-height: 100vh;
+        }
+
+        &--content {
+            position: absolute;
+            bottom: 30%;
+            width: 40%;
+            color: $white;
+            padding-right: 8px;
+            padding-left: 8px;
+
+            .game-sinopsis {
+                display: none;
+            }            
+            
+            @include from(l) {
+                .game-sinopsis {
+                    display: block;
+                }
+
+            }
+
+        }
+
+        .btn--primary {
+            margin-top: 1rem;
+        }
+
+    }
+
+    .glider-dot {
+        width: 5%;
+        height: 4px;
+        background-color: $opacity-white;
+        align-self: center;
+        border-radius: 0;
+        
+        &.active {
+            background-color: $purple;
+            height: 8px;
+        }
+    }
+    
+}
+
+
+.game {
+    border-radius: $border-radius;
+    background-color: $dark;
+    overflow: hidden;
+
+    &-item {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    &--img { height: 240px; }
+    &--content {
+        padding: 0 8px 8px;
+        color: $opacity-white;
+    }
+    &--title {
+        color: $white;
+    }
+    &--stars {
+        margin-bottom: 1rem;
+
+        .stars {
+            margin: 0;
+
+            i {
+                color: $opacity-white;
+                margin-right: .5rem;
+                &.active {
+                    color: $yellow;
+                }
+            }
+
+            &-numbers {
+                color: $yellow;
+                margin-left: 1rem;
+            }
+
+        }
+    }
+    
+    &--price {
+        color: $white;
+        margin: 1rem 0 .5rem;
+        font-weight: bolder;
+        justify-content: space-between;
+    }
+}
+
+.pre-order-glider .glider-track {
+    align-items: center;
+    height: 70vh !important;
+}
+
+.pre-order-glider-item {
+    height: 50vh !important;
+    margin: .5rem;
+    
+    img {
+        filter: saturate(50%);
+    }
+
+    &.center   {        
+        height: 80vh !important;
+        
+        img {
+            filter: saturate(120%);
+        }
+    }
+
+    
+    @include from(l) {
+
+        &[class*="left-"] {
+            margin-left: 22vw !important;
+        }   
+
+        &:first-child {
+            margin-left: 22vw;
+        }
+
+        &:last-child {
+            margin-right: 22vw;
+        }
+
+    }
+
+
+}
+
+.now-on-sale {
+
+    &-block {
+        display: grid;
+        gap: .5rem;
+        grid-template-columns: repeat(1, 1fr);
+
+        @include from(l) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
+
+    &-item {
+        position: relative;
+
+        @include from(l) {
+
+            &:nth-child(1) {
+                grid-row: 1/2;
+            }
+            &:nth-child(2) {
+                grid-row: 1/3;
+            }
+        }
+    }
+
+    &-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $opacity-dark;
+
+        .content {
+            margin-top: 3rem;
+            text-align: center;
+
+            &:first-child { 
+                margin-top: 0; 
+                color: $yellow;
+            }
+
+            &:last-child {
+                color: $white;
+            }
+
+            p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            &-descount {
+                font-size: 3.5rem;
+                font-weight: bolder;
+                margin-top: .5rem;
+            }
+            &-weekend {
+                margin-top: .5rem;
+                font-size: 2rem;
+            }
+
+        }
+
+
+    }
+
+}
+
+.blog-item {
+    background-color: $dark;
+    color: $white;
+    border-radius: $border-radius;
+    overflow: hidden;
+    position: relative;
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+    &-title {
+        padding: .5rem ;
+        font-weight: normal;
+    }
+
+    &-img {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( transparent 70% , $dark);
+        }
+    }
+
+    &-info {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 4px;
+        padding: .5rem 1rem;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        div {
+            margin-right: 1rem;
+        }
+
+        .publish-date {
+            margin-left: auto;
+        }
+
+    }
+}

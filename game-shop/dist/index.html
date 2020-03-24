@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9dca648001.js" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/home_page.css">
+</head>
+
+<body>
+
+    <nav class="navigation mt-2">
+        <div class="navigation-block  l-container ">
+            <div class="navigation-item">
+                <div class="hamburger"> <i class="fas fa-bars"></i> </div>
+                <div class="logo"> <i class="fas fa-gamepad"></i> </div>
+            </div>
+            <div class="navigation-item">
+                <form class="navigation-search">
+                    <input type="search" placeholder="Some text" class="navigation-search--input" />
+                </form>
+            </div>
+            <div class="navigation-item">
+                <div class="navigation-cart"> <i class="fas fa-shopping-cart"></i> </div>
+                <div class="navigation-account">
+                    <a href="#" class="btn btn--primary">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="carousel">
+            <div class="carousel-block">
+                <div class="carousel-item">
+                    <img class="carousel-item--img"
+                        src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg"
+                        alt="" />
+                    <div class="l-container">
+                        <div class="carousel-item--content">
+                            <h2 class="game-title">Cyberpunk 2077</h2>
+                            <p class="game-sinopsis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis,
+                                expedita sequi debitis laboriosam quae laudantium reiciendis, soluta earum magnam
+                                repudiandae commodi accusantium iste et suscipit. Perferendis voluptatum blanditiis qui
+                                explicabo nisi magnam sed, aliquid aut, corrupti, consequatur earum porro. Autem.</p>
+                            <a href="#" class="btn btn--primary">Pre-Order $30.0</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-item--img"
+                        src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg"
+                        alt="" />
+                    <div class="l-container">
+                        <div class="carousel-item--content">
+                            <h2 class="game-title">Cyberpunk 2077</h2>
+                            <p class="game-sinopsis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis,
+                                expedita sequi debitis laboriosam quae laudantium reiciendis, soluta earum magnam
+                                repudiandae commodi accusantium iste et suscipit. Perferendis voluptatum blanditiis qui
+                                explicabo nisi magnam sed, aliquid aut, corrupti, consequatur earum porro. Autem.</p>
+                            <a href="#" class="btn btn--primary">Pre-Order $30.0</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-item--img"
+                        src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg"
+                        alt="" />
+                    <div class="l-container">
+                        <div class="carousel-item--content">
+                            <h2 class="game-title">Cyberpunk 2077</h2>
+                            <p class="game-sinopsis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis,
+                                expedita sequi debitis laboriosam quae laudantium reiciendis, soluta earum magnam
+                                repudiandae commodi accusantium iste et suscipit. Perferendis voluptatum blanditiis qui
+                                explicabo nisi magnam sed, aliquid aut, corrupti, consequatur earum porro. Autem.</p>
+                            <a href="#" class="btn btn--primary">Pre-Order $30.0</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="carousel-prev"></div>
+                <div class="carousel-next"></div>
+            </div>
+            <div id="carousel-dots" class="carousel-list">
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        
+        <section class="discover-games pt-5">
+            <div class="section-header l-container flex-center">
+                <h2 class="title">Discover Games</h2>
+                <div class="section--controls flex-center">
+                    <div class="control-arrow discover-glider-prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="control-arrow discover-glider-next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="section-body glider-contain multiple">
+                <div class="glider-discover">
+                    <div class="game-item">
+                        <div class="game" onclick="this.classList.toggle('active')">
+                            <div class="game--img">
+                                <img src="https://www.edicioncoleccionista.com/wp-content/uploads/2015/12/The-Art-of-Fallout-4-de-Bethesda-Softworks.jpg" alt="">
+                            </div>
+                            <div class="game--content">
+                                <h3 class="game--title">Ruiner</h3>
+                                <div class="game--stars flex-center">
+                                    <ul class="stars flex-center">
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                    <span class="stars-numbers"> 4.7</span>
+                                </div>
+                                <p class="game--gender">Action, Cyberpunk</p>
+                                <p class="game--release">Reikon Games, 2017</p>
+                                <div class="game--price price flex-center">
+                                    <span>$12.99</span>
+                                    <a class="btn btn--primary price" href="">Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="game" onclick="this.classList.toggle('active')">
+                            <div class="game--img">
+                                <img src="https://vignette.wikia.nocookie.net/deusex/images/7/7f/DeusExHumanRevolutionCover.png/revision/latest?cb=20130520171057&path-prefix=es" alt="">
+                            </div>
+                            <div class="game--content">
+                                <h3 class="game--title">Ruiner</h3>
+                                <div class="game--stars flex-center">
+                                    <ul class="stars flex-center">
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                    <span class="stars-numbers"> 4.7</span>
+                                </div>
+                                <p class="game--gender">Action, Cyberpunk</p>
+                                <p class="game--release">Reikon Games, 2017</p>
+                                <div class="game--price price flex-center">
+                                    <span>$12.99</span>
+                                    <a class="btn btn--primary price" href="">Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="game" onclick="this.classList.toggle('active')">
+                            <div class="game--img">
+                                <img src="https://media.vandal.net/m/46352/ruiner-201792695027_9.jpg" alt="">
+                            </div>
+                            <div class="game--content">
+                                <h3 class="game--title">Ruiner</h3>
+                                <div class="game--stars flex-center">
+                                    <ul class="stars flex-center">
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                    <span class="stars-numbers"> 4.7</span>
+                                </div>
+                                <p class="game--gender">Action, Cyberpunk</p>
+                                <p class="game--release">Reikon Games, 2017</p>
+                                <div class="game--price price flex-center">
+                                    <span>$12.99</span>
+                                    <a class="btn btn--primary price" href="">Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="game" onclick="this.classList.toggle('active')">
+                            <div class="game--img">
+                                <img src="https://www.edicioncoleccionista.com/wp-content/uploads/2015/12/The-Art-of-Fallout-4-de-Bethesda-Softworks.jpg" alt="">
+                            </div>
+                            <div class="game--content">
+                                <h3 class="game--title">Ruiner</h3>
+                                <div class="game--stars flex-center">
+                                    <ul class="stars flex-center">
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                    <span class="stars-numbers"> 4.7</span>
+                                </div>
+                                <p class="game--gender">Action, Cyberpunk</p>
+                                <p class="game--release">Reikon Games, 2017</p>
+                                <div class="game--price price flex-center">
+                                    <span>$12.99</span>
+                                    <a class="btn btn--primary price" href="">Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="game" onclick="this.classList.toggle('active')">
+                            <div class="game--img">
+                                <img src="https://vignette.wikia.nocookie.net/deusex/images/7/7f/DeusExHumanRevolutionCover.png/revision/latest?cb=20130520171057&path-prefix=es" alt="">
+                            </div>
+                            <div class="game--content">
+                                <h3 class="game--title">Ruiner</h3>
+                                <div class="game--stars flex-center">
+                                    <ul class="stars flex-center">
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                    <span class="stars-numbers"> 4.7</span>
+                                </div>
+                                <p class="game--gender">Action, Cyberpunk</p>
+                                <p class="game--release">Reikon Games, 2017</p>
+                                <div class="game--price price flex-center">
+                                    <span>$12.99</span>
+                                    <a class="btn btn--primary price" href="">Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="game" onclick="this.classList.toggle('active')">
+                            <div class="game--img">
+                                <img src="https://media.vandal.net/m/46352/ruiner-201792695027_9.jpg" alt="">
+                            </div>
+                            <div class="game--content">
+                                <h3 class="game--title">Ruiner</h3>
+                                <div class="game--stars flex-center">
+                                    <ul class="stars flex-center">
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star active"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                    <span class="stars-numbers"> 4.7</span>
+                                </div>
+                                <p class="game--gender">Action, Cyberpunk</p>
+                                <p class="game--release">Reikon Games, 2017</p>
+                                <div class="game--price price flex-center">
+                                    <span>$12.99</span>
+                                    <a class="btn btn--primary price" href="">Add</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pre-order pt-5">
+            <div class="section-header l-container flex-center">
+                <h2 class="title">Pre-order</h2>
+                <div class="section--controls flex-center">
+                    <div class="control-arrow pre-order-glider-prev" ><i class="fas fa-chevron-left"></i></div>
+                    <div class="control-arrow pre-order-glider-next" ><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="section-body glider-contain multiple">
+                <div class="pre-order-glider">
+                    <div class="pre-order-glider-item">
+                        <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-US/global/media/watchdogs_ss_hq_full_157609.jpg" alt="">
+                    </div>
+                    <div class="pre-order-glider-item">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077-Really_love_what_you_did_with_the_place-RGB-en.jpg" alt="">
+                    </div>
+                    <div class="pre-order-glider-item">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg" alt="">
+                    </div>
+                    <div class="pre-order-glider-item">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077-Really_love_what_you_did_with_the_place-RGB-en.jpg" alt="">
+                    </div>
+                    <div class="pre-order-glider-item">
+                        <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-US/global/media/watchdogs_ss_hq_full_157609.jpg" alt="">
+                    </div>
+                    <div class="pre-order-glider-item">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="now-on-sale pt-5">
+            <div class="section-header l-container flex-center">
+                <h2 class="title">Now on sale</h2>
+            </div>
+            <div class="section-body">
+                <div class="now-on-sale-block l-container">
+                    <div class="now-on-sale-item">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg"
+                            alt="" />
+                        <article class="now-on-sale-content">
+                            <section class="content">
+                                <p>Up to</p>
+                                <p class="content-descount">-85%</p>
+                            </section>
+                            <section class="content">
+                                <p>22 hours 25 min left </p>
+                                <p class="content-weekend">Weekend Sale</p>
+                            </section>                            
+                        </article>
+                    </div>
+                    <div class="now-on-sale-item">
+                        <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077-Really_love_what_you_did_with_the_place-RGB-en.jpg"
+                            alt="" />
+                            <article class="now-on-sale-content">
+                                <section class="content">
+                                    <p>Up to</p>
+                                    <p class="content-descount">-85%</p>
+                                </section>
+                                <section class="content">
+                                    <p>22 hours 25 min left </p>
+                                    <p class="content-weekend">Weekend Sale</p>
+                                </section>                            
+                            </article>
+                    </div>
+                    <div class="now-on-sale-item">
+                        <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-US/global/media/watchdogs_ss_hq_full_157609.jpg"
+                            alt="" />
+                            <article class="now-on-sale-content">
+                                <section class="content">
+                                    <p>Up to</p>
+                                    <p class="content-descount">-85%</p>
+                                </section>
+                                <section class="content">
+                                    <p>22 hours 25 min left </p>
+                                    <p class="content-weekend">Weekend Sale</p>
+                                </section>                            
+                            </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog pt-5">
+            <div class="section-header l-container flex-center">
+                <h2 class="title">Blog</h2>
+                <div class="section--controls flex-center">
+                    <div class="control-arrow blog-glider-prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="control-arrow blog-glider-next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="section-body glider-contain multiple">
+                <div class="blog-glider">
+                    <div class="blog-item">
+                        <div>
+                            <p class="blog-item-title">COMMING SOON</p>   
+                        </div>
+                        <div  class="blog-item-img">
+                            <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-US/global/media/watchdogs_ss_hq_full_157609.jpg" alt="">
+                        </div>
+                        <div class="blog-item-info">
+                            <div>
+                                <span class="likes"><i class="fas fa-heart"></i> 20</span>
+                            </div>
+                            <div>
+                                <span class="comments"><i class="fas fa-comment"></i> 15</span>
+                            </div>
+                            <div  class="publish-date">
+                                <span>11 Octubre, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div>
+                            <p class="blog-item-title">COMMING SOON</p>   
+                        </div>
+                        <div class="blog-item-img" >
+                            <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg" alt="">
+                        </div>
+                        <div class="blog-item-info">
+                            <div>
+                                <span class="likes"><i class="fas fa-heart"></i> 20</span>
+                            </div>
+                            <div>
+                                <span class="comments"><i class="fas fa-comment"></i> 15</span>
+                            </div>
+                            <div  class="publish-date">
+                                <span>11 Octubre, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div>
+                            <p class="blog-item-title">COMMING SOON</p>   
+                        </div>
+                        <div class="blog-item-img" >
+                            <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077-Really_love_what_you_did_with_the_place-RGB-en.jpg" alt="">
+                        </div>
+                        <div class="blog-item-info">
+                            <div>
+                                <span class="likes"><i class="fas fa-heart"></i> 20</span>
+                            </div>
+                            <div>
+                                <span class="comments"><i class="fas fa-comment"></i> 15</span>
+                            </div>
+                            <div  class="publish-date">
+                                <span>11 Octubre, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div>
+                            <p class="blog-item-title">COMMING SOON</p>   
+                        </div>
+                        <div  class="blog-item-img">
+                            <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-US/global/media/watchdogs_ss_hq_full_157609.jpg" alt="">
+                        </div>
+                        <div class="blog-item-info">
+                            <div>
+                                <span class="likes"><i class="fas fa-heart"></i> 20</span>
+                            </div>
+                            <div>
+                                <span class="comments"><i class="fas fa-comment"></i> 15</span>
+                            </div>
+                            <div  class="publish-date">
+                                <span>11 Octubre, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div>
+                            <p class="blog-item-title">COMMING SOON</p>   
+                        </div>
+                        <div class="blog-item-img" >
+                            <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg" alt="">
+                        </div>
+                        <div class="blog-item-info">
+                            <div>
+                                <span class="likes"><i class="fas fa-heart"></i> 20</span>
+                            </div>
+                            <div>
+                                <span class="comments"><i class="fas fa-comment"></i> 15</span>
+                            </div>
+                            <div  class="publish-date">
+                                <span>11 Octubre, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div>
+                            <p class="blog-item-title">COMMING SOON</p>   
+                        </div>
+                        <div class="blog-item-img" >
+                            <img src="https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077-Really_love_what_you_did_with_the_place-RGB-en.jpg" alt="">
+                        </div>
+                        <div class="blog-item-info">
+                            <div>
+                                <span class="likes"><i class="fas fa-heart"></i> 20</span>
+                            </div>
+                            <div>
+                                <span class="comments"><i class="fas fa-comment"></i> 15</span>
+                            </div>
+                            <div  class="publish-date">
+                                <span>11 Octubre, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- https://ubistatic19-a.akamaihd.net/ubicomstatic/en-US/global/media/watchdogs_ss_hq_full_157609.jpg-->
+    <!-- https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/screen-Cyberpunk2077-Outnumbered_But_Not_Outgunned-RGB-en.jpg -->
+    <!-- https://cdn-l-cyberpunk.cdprojektred.com/gallery/1080p/Cyberpunk2077-Really_love_what_you_did_with_the_place-RGB-en.jpg -->
+    <!-- https://www.edicioncoleccionista.com/wp-content/uploads/2015/12/The-Art-of-Fallout-4-de-Bethesda-Softworks.jpg -->
+    <!-- https://vignette.wikia.nocookie.net/deusex/images/7/7f/DeusExHumanRevolutionCover.png/revision/latest?cb=20130520171057&path-prefix=es -->
+
+    <footer class="footer">
+        <div class="footer-block l-container">
+            <section class="footer-item first">
+                <div class="footer-item-block">
+                    <div class="logo">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <nav class="footer-nav">
+                        <p class="footer-nav-title">Gog.com:</p>
+                        <ul>
+                            <li class="footer-nav-item">Redeem code</li>
+                            <li class="footer-nav-item">Reclaim your game</li>
+                            <li class="footer-nav-item">GOG Connect</li>
+                            <li class="footer-nav-item">Contact us</li>
+                            <li class="footer-nav-item">Career opportunities</li>
+                            <li class="footer-nav-item">Submit your game</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-item-block">
+                    <nav class="footer-nav">
+                        <p class="footer-nav-title">Languages</p>
+                        <ul>
+                            <li class="footer-nav-item">English</li>
+                            <li class="footer-nav-item">Frances</li>
+                            <li class="footer-nav-item">Aleman</li>
+                            <li class="footer-nav-item">Español</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-item-block">
+                    <nav class="footer-nav">
+                        <p class="footer-nav-title">Our Social Media</p>
+                        <ul>
+                            <li class="footer-nav-item">Facebook</li>
+                            <li class="footer-nav-item">Twitter</li>
+                            <li class="footer-nav-item">Twitch</li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-nav">
+                        <p>Download</p>
+                        <div class="download-app">
+
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <section class="footer-item second">
+                <ul class="nav-company">
+                    <li>Legal</li>
+                    <li>Company reorganisation</li>
+                    <li>Privacity policy</li>
+                    <li>Termins</li>
+                </ul>
+                <div class="created">
+                    <p>GOG So z.o.o. 2020 Part of <span>CD PROJECT RED</span> group </p>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/glider.min.js"></script>
+    
+    <script>
+
+        let header = new Glider(document.querySelector('.carousel-block'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: '#carousel-dots',
+            scrollPropagate: true,
+            rewind: true,
+            draggable: true,
+            arrows: {
+                prev: '.carousel-prev',
+                next: '.carousel-next'
+            }
+        });
+
+        let discover = new Glider(document.querySelector('.glider-discover'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            scrollPropagate: true,
+            rewind: true,
+            draggable: true,
+            duration: 0.25,
+            dots: '#dots',
+            arrows: {
+                prev: '.discover-glider-prev',
+                next: '.discover-glider-next'
+            },
+            responsive: [
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 415,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 2,
+                        slidesToScroll: 'auto',
+                        duration: 0.25
+                    }
+                },
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 775,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 3,
+                        slidesToScroll: 'auto',
+                        duration: 0.25
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        duration: 0.25
+                    }
+                }
+            ]
+        });
+
+        let preOrder = new Glider(document.querySelector('.pre-order-glider'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            scrollPropagate: true,
+            rewind: true,
+            draggable: true,
+            arrows: {
+                prev: '.pre-order-glider-prev',
+                next: '.pre-order-glider-next'
+            },
+            responsive: [
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 768,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 1.5,
+                        slidesToScroll: 1,
+                        scrollPropagate: true,
+                        rewind: true,
+                        draggable: true,
+                        duration: 0.25
+                    }
+                }
+            ]
+        });
+        
+        let blog = new Glider(document.querySelector('.blog-glider'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: '#blog-glider-dots',
+            scrollPropagate: true,
+            rewind: true,
+            draggable: true,
+            arrows: {
+                prev: '.blog-glider-prev',
+                next: '.blog-glider-next'
+            }, responsive: [
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 768,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        scrollPropagate: true,
+                        rewind: true,
+                        draggable: true,
+                        duration: 0.25
+                    }
+                }
+            ]
+        });
+
+
+// wallpaper-caousel
+    </script>
+
+</body>
+
+</html>
