@@ -1,0 +1,46 @@
+/* Menu toggle */
+.menu-toggle {
+    position: fixed;
+    top: 1rem;
+    right: .5rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  
+    @include from(t) {
+      position: static;
+    }
+}
+/* icon */
+.square {
+  height: 100%;
+  position: relative;
+
+    [class*="square_"] {      
+      position: absolute;
+      background-color: var(--color-first);
+      width: 13px;
+      height: 13px;
+      transition: 1s;
+      border-radius: 50%;
+
+      &.toggle {--color-first: var(--color-second);}      
+      &:hover {background-color: var(--color-light);}      
+    }
+
+    &__tl {top: 1px; left: 1px;}
+    &__tr {top: 1px; right:1px;}
+    &__br {bottom: 1px; right:1px;}
+    &__bl {bottom: 1px; left: 1px;}
+
+    &.toggle {
+
+      .square_tl {   display: none;   }
+      .square_tr {      }
+      .square_br {   display: none;   }
+      .square_bl {      }
+
+    }
+
+}
+  

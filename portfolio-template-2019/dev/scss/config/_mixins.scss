@@ -1,0 +1,18 @@
+@mixin from($bp) {
+  @if map-has-key($breakpoints, $bp) {
+    @media screen and (min-width : map_get($breakpoints, $bp)) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width : $bp) {
+      @content;
+    }
+  }
+}
+
+@mixin title() {  
+  font-family: $coda;
+  font-weight: 800;
+  font-size: var(--h1-font-size);
+  color: var(--color-second);
+}

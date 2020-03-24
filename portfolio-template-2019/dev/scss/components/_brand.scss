@@ -1,0 +1,37 @@
+/* Logo o marca */
+.brand {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+
+    @include from(t) {      
+    }
+  
+    &__name {
+      background-color: var(--color-first);
+      color: var(--color-light);
+      padding: .2rem .5rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 1.5rem;
+      letter-spacing: .1rem;
+      transition: .5s ease-in;
+      font-weight: 700;
+
+      &.toggle {background-color: var(--color-second);}
+    }
+    &__line {
+      margin-right: .4rem;
+      margin-left: .4rem;
+      width: 15px;
+      height: 2px;
+      background-color: var(--color-first);
+    }
+    &__rol {
+      color: var(--color-dark);
+      letter-spacing: .1rem;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+  }

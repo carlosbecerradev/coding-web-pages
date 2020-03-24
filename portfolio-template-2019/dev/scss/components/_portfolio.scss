@@ -1,0 +1,103 @@
+.portfolio {
+    position: relative;
+    width: 100%;
+
+    @include from(t) {
+        height: 100%;
+        position: absolute;
+    }
+}
+
+.item {
+    position: relative;
+    margin-bottom: 5rem;
+    overflow: hidden;
+
+    &:first-child { margin-top: 1rem; 
+        @include from(t) { margin-top: 0; }
+    }
+
+    &:last-child {margin-bottom: 2rem;
+        @include from(t) {margin-bottom: 0; };
+    }
+    
+    &__img {
+        height: 100%;
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 360px;
+            object-fit: cover; //cover a la imagen
+            filter: saturate(10%);
+            transition: 1s;
+            
+            @include from(t) {height: 100%;}
+        }
+    }
+    
+    &__content {
+        position: absolute;
+        bottom: -100%;
+        width: 100%;
+        background-color: var(--color-light);
+        z-index: var(--z-normal);
+        transition: 1s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: .5rem;
+        font-size: var(--h2-font-size);  
+        color: var(--color-first);   
+    }
+    
+    &__name {
+        margin-bottom: 0;          
+    }
+    
+    &__show {
+        height: 100%;
+        transition: .5s ease-in;
+        color: var(--color-first);
+        
+        &:hover {
+            cursor: pointer;
+            color: var(--color-second);
+        }
+    }   
+
+    &:hover {
+                    
+        .item__img {
+            img{
+                transform: scale(1.5) rotate(-25deg);
+                filter: saturate(150%);
+            }
+        }
+
+        .item__content {
+            bottom: 50%;
+        }
+    }
+
+    @include from(t) {
+        position: absolute;
+        height: 100%;
+        width: 42%;
+
+        @for $var from 0 to $items / 2 {           
+            
+            &:nth-child(#{2 * $var + 1}) {
+                top: #{$var * 120 *1%};
+                right: 0;
+            }
+            &:nth-child(#{2 * $var + 2}) {
+                top: #{ ($var * 120) + 50 *1%};
+                left: 0;
+            }                
+        }    
+    }
+}
+
+

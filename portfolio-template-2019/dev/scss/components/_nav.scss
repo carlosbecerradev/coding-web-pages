@@ -1,0 +1,48 @@
+
+.nav {
+    position: fixed;
+    background-color: var(--color-light);
+    top: -100% ;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transition: 1s ease-out;
+    z-index: calc(var(--z-fixed) - 1);
+
+    &.toggle {
+        top: 0;
+    }
+
+    &__content {
+        flex-direction: column;
+        height: 100%;
+        padding-left: 0;
+        margin-top: 0;
+
+        @include from(t) {                
+            max-width     : $max-width;
+            margin-right  : auto;
+            margin-left   : auto;
+            padding-left  : .5rem;
+            padding-right : .5rem;
+        }
+
+    }
+    &__item {        
+        position: relative;
+        list-style: none;
+        font-size: var(--h1-font-size);
+        margin-bottom: 2rem;
+    }
+    &__link {
+        color: var(--color-second);
+        letter-spacing: .1rem;
+        font-family: $coda;
+        transition: .5s;
+
+        &:hover {
+            text-shadow: 0 -20px 1px var(--color-first);;
+            color: transparent;
+        }
+    }
+}

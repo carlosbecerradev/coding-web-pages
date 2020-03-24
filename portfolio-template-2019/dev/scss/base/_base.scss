@@ -1,0 +1,38 @@
+*, *::before, *::after {
+  box-sizing : border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {    
+  font-family : $roboto;
+  font-size: var(--body-font-size);
+  word-spacing: 4px;
+  color: var(--color-dark);
+}
+
+a {
+  text-decoration : none;
+}
+img {
+  max-width : 100%;
+  display: block; //arregla el vacio inferior
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top : 0;
+}
+
+h1 {
+  font-size : var(--h1-font-size);
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size : var(--h2-font-size);
+}
+p {
+  margin-top: 0;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}

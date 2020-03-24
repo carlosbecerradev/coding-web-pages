@@ -1,0 +1,58 @@
+.small {
+  font-size : var(--small-font-size);
+}
+
+.title {
+  color:  var(--color-first);
+  font-size: var(--h1-font-size);
+  font-family: $coda;
+  letter-spacing: .2rem;
+  text-transform: capitalize;
+  transition: 1s;
+}
+
+.page-name-text {
+  font-weight: 400;
+  display: block;
+  padding-left: 2px;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--small-font-size);
+}
+
+.lets-work {
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.lets-work.title {
+  font-size: var(--cta-text);
+}
+
+.paragraph {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  @include from(t) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.subtitle {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: $coda;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  font-size: var(--h2-font-size);
+}

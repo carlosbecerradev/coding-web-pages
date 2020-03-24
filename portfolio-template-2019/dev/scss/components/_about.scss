@@ -1,0 +1,28 @@
+.profile {
+    width: 100%;
+}
+
+.about {
+
+    @include from(t) {
+        display: flex;    
+        justify-content: space-between;
+    }
+
+    &__content {
+
+        @include from(t) {
+            padding-right: 0;
+            padding-left: 2rem;
+        }
+        
+    }
+
+    &__img {        
+
+        img {
+            filter: saturate(.5);
+        }        
+        
+    }
+}
